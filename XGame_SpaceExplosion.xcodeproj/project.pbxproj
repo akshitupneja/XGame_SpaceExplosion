@@ -27,6 +27,8 @@
 		6D81E617203E580200EB93DA /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6D81E613203E580200EB93DA /* Explosion.sks */; };
 		6D81E61A203E581B00EB93DA /* starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6D81E618203E581A00EB93DA /* starfield.sks */; };
 		6D81E61B203E581B00EB93DA /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D81E619203E581B00EB93DA /* torpedo.mp3 */; };
+		6D81E61F203E598100EB93DA /* x-game-logo-design.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D81E61D203E598100EB93DA /* x-game-logo-design.png */; };
+		6D81E620203E598100EB93DA /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D81E61E203E598100EB93DA /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		6D81E613203E580200EB93DA /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		6D81E618203E581A00EB93DA /* starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starfield.sks; sourceTree = "<group>"; };
 		6D81E619203E581B00EB93DA /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
+		6D81E61D203E598100EB93DA /* x-game-logo-design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "x-game-logo-design.png"; sourceTree = "<group>"; };
+		6D81E61E203E598100EB93DA /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		6D81E5D3203E498000EB93DA /* XGame_SpaceExplosion */ = {
 			isa = PBXGroup;
 			children = (
+				6D81E61C203E596300EB93DA /* Images */,
 				6D81E5FF203E571E00EB93DA /* Scenes */,
 				6D81E5D4203E498000EB93DA /* AppDelegate.swift */,
 				6D81E618203E581A00EB93DA /* starfield.sks */,
@@ -115,6 +120,15 @@
 				6D81E606203E574400EB93DA /* StartScene.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6D81E61C203E596300EB93DA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6D81E61E203E598100EB93DA /* spark.png */,
+				6D81E61D203E598100EB93DA /* x-game-logo-design.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +192,7 @@
 			files = (
 				6D81E61B203E581B00EB93DA /* torpedo.mp3 in Resources */,
 				6D81E5E0203E498000EB93DA /* Main.storyboard in Resources */,
+				6D81E61F203E598100EB93DA /* x-game-logo-design.png in Resources */,
 				6D81E5E2203E498000EB93DA /* Assets.xcassets in Resources */,
 				6D81E614203E580200EB93DA /* lose.mp3 in Resources */,
 				6D81E61A203E581B00EB93DA /* starfield.sks in Resources */,
@@ -188,6 +203,7 @@
 				6D81E5E5203E498000EB93DA /* LaunchScreen.storyboard in Resources */,
 				6D81E616203E580200EB93DA /* explosion.mp3 in Resources */,
 				6D81E5D9203E498000EB93DA /* Actions.sks in Resources */,
+				6D81E620203E598100EB93DA /* spark.png in Resources */,
 				6D81E60F203E574400EB93DA /* GameOverScene.sks in Resources */,
 				6D81E60C203E574400EB93DA /* InstructionScene.sks in Resources */,
 			);
