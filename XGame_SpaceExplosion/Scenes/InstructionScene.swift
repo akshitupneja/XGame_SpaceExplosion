@@ -19,6 +19,10 @@ class InstructionScene: SKScene {
             addChild(backgroundMusic)
         }
         
+
+        let startfield : SKEmitterNode = self.childNode(withName: "starfield") as! SKEmitterNode
+        startfield.advanceSimulationTime(10)
+        
         print("This is instruction screen")
         let InstructionLabel : SKLabelNode = self.childNode(withName: "InstructionLabel") as!
         SKLabelNode
@@ -26,8 +30,8 @@ class InstructionScene: SKScene {
         let gameOverButton : SKSpriteNode = self.childNode(withName: "gameOverButton") as!
         SKSpriteNode
 
-//        let startfield : SKEmitterNode = self.childNode(withName: "starfield") as! SKEmitterNode
-//        startfield.advanceSimulationTime(10)
+
+        
         
     }
     

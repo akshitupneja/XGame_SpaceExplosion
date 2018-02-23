@@ -51,13 +51,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
 
         print("this is game scene")
         
-        starfield = SKEmitterNode(fileNamed: "starfield")
-        starfield.position = CGPoint(x: 0, y: 1472)
-        starfield.advanceSimulationTime(10)
-        self.addChild(starfield)
+        let startfield : SKEmitterNode = self.childNode(withName: "starfield") as! SKEmitterNode
+        startfield.advanceSimulationTime(10)
         
-        starfield.zPosition = -1
-
         player = SKSpriteNode(imageNamed: "XWing.png")
         
         player.position = CGPoint(x: self.frame.size.width / 2, y: player.size.height / 2 + 10)

@@ -20,13 +20,7 @@ class GameOverScene: SKScene {
             addChild(backgroundMusic)
         }
         
-        starfield = SKEmitterNode(fileNamed: "starfield")
-        starfield.position = CGPoint(x: 0, y: 1472)
-        starfield.advanceSimulationTime(10)
-        self.addChild(starfield)
-        
-        starfield.zPosition = -1
-
+    
         
         let gameOverLabel : SKLabelNode = self.childNode(withName: "gameOverLabel") as!
         SKLabelNode
@@ -44,6 +38,9 @@ class GameOverScene: SKScene {
         let mainMenuButton : SKSpriteNode = self.childNode(withName: "mainMenuButton") as!
         SKSpriteNode
         
+        let startfield : SKEmitterNode = self.childNode(withName: "starfield") as! SKEmitterNode
+
+        startfield.advanceSimulationTime(10)
         
     }
     
