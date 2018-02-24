@@ -29,11 +29,6 @@ class InstructionScene: SKScene {
         print("This is instruction screen")
 
 
-        let instructions : SKLabelNode = self.childNode(withName: "Instructions") as!
-        SKLabelNode
-        instructions.text = "Tilt left and Right to move and Tap to fire"
-
-
 
         
         
