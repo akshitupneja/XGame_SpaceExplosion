@@ -19,6 +19,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     var starfield:SKEmitterNode!
     var player:SKSpriteNode!
     var backgroundMusic: SKAudioNode!
+    
+  
+    var invisibleControllerSprite = SKSpriteNode()
 
     var scoreLabel:SKLabelNode!
     var score:Int = 0 {
@@ -33,6 +36,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     let alienCategory:UInt32 = 0x1 << 1
     let photonTorpedoCategory:UInt32 = 0x1 << 0
+
+   
     
     
     let motionManger = CMMotionManager()
@@ -72,6 +77,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         score = 0
         
         self.addChild(scoreLabel)
+    
+
+        
         
         
         gameTimer = Timer.scheduledTimer(timeInterval: 0.75, target: self, selector: #selector(addAlien), userInfo: nil, repeats: true)
@@ -202,13 +210,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         }
         
         if (firstBody.categoryBitMask & photonTorpedoCategory) != 0 && (secondBody.categoryBitMask & alienCategory) != 0 {
-            torpedoDidCollideWithAlien(torpedoNode: firstBody.node as! SKSpriteNode, alienNode: secondBody.node as! SKSpriteNode)
+            torpedoDidCollideWithAlien(torpedoNode:  firstBody.node as! SKSpriteNode, alienNode: secondBody.node as! SKSpriteNode, isTorpedo: true)
         }
+        
         
     }
     
     
-    func torpedoDidCollideWithAlien (torpedoNode:SKSpriteNode, alienNode:SKSpriteNode) {
+    func torpedoDidCollideWithAlien (torpedoNode:SKSpriteNode, alienNode:SKSpriteNode, isTorpedo: Bool) {
         
         let explosion = SKEmitterNode(fileNamed: "Explosion")!
         explosion.position = alienNode.position
@@ -228,6 +237,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         
         
     }
+    
+
     
     override func didSimulatePhysics() {
         
