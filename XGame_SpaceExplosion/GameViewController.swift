@@ -1,6 +1,8 @@
 //
 //  GameViewController.swift
 //  XGame_SpaceExplosion
+//Author's Name : Santhosh Damodharan, Akshit Upneja, Aman Preet Kaur
+//StudentID : 300964037, 300976590, 300966930
 //
 //  Created by Akshit Upneja on 2018-02-21.
 //  Copyright © 2018 Centennial College. All rights reserved.

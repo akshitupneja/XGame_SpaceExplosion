@@ -1,6 +1,8 @@
 //
 //  GameOverScene.swift
 //  MAPD724-W2018-Lesson2
+//Author's Name : Santhosh Damodharan, Akshit Upneja, Aman Preet Kaur
+//StudentID : 300964037, 300976590, 300966930
 //
 //  Created by Akshit Upneja on 2018-02-06.
 //  Copyright © 2018 Akshit Upneja. All rights reserved.
