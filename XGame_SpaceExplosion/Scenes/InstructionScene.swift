@@ -24,11 +24,12 @@ class InstructionScene: SKScene {
         startfield.advanceSimulationTime(10)
         
         print("This is instruction screen")
-        let InstructionLabel : SKLabelNode = self.childNode(withName: "InstructionLabel") as!
+
+
+        let instructions : SKLabelNode = self.childNode(withName: "Instructions") as!
         SKLabelNode
-        
-        let gameOverButton : SKSpriteNode = self.childNode(withName: "gameOverButton") as!
-        SKSpriteNode
+        instructions.text = "Tilt left and Right to move and Tap to fire"
+
 
 
         
